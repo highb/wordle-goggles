@@ -69,23 +69,10 @@ def analyze_wordle(words):
                 results.append("none")
 
         pattern = f"^{pattern}$"
-
-        print(pattern)
-        print(in_word)
-        print(not_in_word)
-
-        #if_words = eliminate_words(words, guess, results)
         words = regex_eliminate_words(words, pattern, in_word, not_in_word)
-
-        # print("Wordlist from conditional implementation")
-        # print(if_words)
-        # print(len(if_words))
-        #print(timeit.timeit(lambda: eliminate_words(words, guess, results), number=10000))
         
-        print("Wordlist from regex implementation")
+        print(f"Wordlist ({len(words)} remain")
         print(words)
-        print(len(words))
-        #print(timeit.timeit(lambda: regex_eliminate_words(words, pattern, in_word, not_in_word), number=10000))
 
 def get_words_len5(words):
     words_len5 = set()
