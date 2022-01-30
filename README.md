@@ -1,6 +1,8 @@
 # wordle-goggles
 Wordle Analyzer/Solver that uses NLTK to eliminate uncommon words
 
+WARNING: This code is currently broken and needs some work.
+
 ## Setup
 
 ```
