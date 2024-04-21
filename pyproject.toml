@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "wordle-goggles"
+version = "0.1.0"
+description = "Wordle Analyzer/Solver that uses NLTK to eliminate uncommon words"
+authors = ["Brandon High"]
+license = "Apache 2.0"
+
+[tool.poetry.scripts]
+wordle-goggles = "wordle_goggles.wordle_goggles:main"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+nltk = "^3.6.7"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
